@@ -33,31 +33,6 @@ A full-stack travel agency dashboard built with **React**, **React Router v7**, 
 
 ---
 
-## 📸 Screenshots
-
-### Sign In
-![Sign In](screenshots/Screenshot%20(2579).png)
-
-### Home Page
-![Home Page](screenshots/Screenshot%20(2580).png)
-
-### Featured Travel Destinations
-![Featured Destinations](screenshots/Screenshot%20(2581).png)
-
-### Admin Dashboard
-![Admin Dashboard](screenshots/Screenshot%20(2582).png)
-
-### Manage Users
-![Manage Users](screenshots/Screenshot%20(2583).png)
-
-### Generate Trip – Form
-![Generate Trip Form](screenshots/Screenshot%20(2584).png)
-
-### Generate Trip – World Map
-![Generate Trip Map](screenshots/Screenshot%20(2585).png)
-
----
-
 ## ✨ Features
 
 ### 👤 For Users
