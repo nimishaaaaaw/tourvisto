@@ -21,10 +21,8 @@ export const storeUserData = async () => {
         const user = await account.get();
         if (!user) throw new Error("User not found");
 
-        const { providerAccessToken } = (await account.getSession("current")) || {};
-        const profilePicture = providerAccessToken
-            ? await getGooglePicture(providerAccessToken)
-            : null;
+        // Use Appwrite's built-in avatar instead of Google People API
+        const imageUrl = `https://cloud.appwrite.io/v1/avatars/initials?name=${encodeURIComponent(user.name)}&project=${appwriteConfig.projectId}`;
 
         const createdUser = await database.createDocument(
             appwriteConfig.databaseId,
@@ -34,11 +32,11 @@ export const storeUserData = async () => {
                 accountId: user.$id,
                 email: user.email,
                 name: user.name,
-                imageUrl: profilePicture,
+                imageUrl: imageUrl,
                 joinedAt: new Date().toISOString(),
-                status: "user", // add this line
+                status: "user",
             }
-);
+        );
 
         if (!createdUser.$id) redirect("/sign-in");
     } catch (error) {
