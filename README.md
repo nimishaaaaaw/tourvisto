@@ -1,8 +1,60 @@
-# 🌍 Tourvisto – AI-Powered Travel Dashboard
+# 🌍 Tourvisto – A Travel Dashboard
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://tourvisto-nine.vercel.app/)
 
 A full-stack travel agency dashboard built with **React**, **React Router v7**, **Appwrite**, and **Gemini AI**. Admins can generate AI-powered travel itineraries, manage users, and track activity — while users can browse and book trips.
 
 🔗 **Live Demo**: [tourvisto-nine.vercel.app](https://tourvisto-nine.vercel.app)
+
+---
+
+## 📸 Screenshots
+
+### Sign In
+![Sign In](screenshots/Screenshot%20(2579).png)
+
+### Home Page
+![Home Page](screenshots/Screenshot%20(2580).png)
+
+### Featured Travel Destinations
+![Travel Destinations](screenshots/Screenshot%20(2581).png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/Screenshot%20(2582).png)
+
+### Manage Users
+![Users](screenshots/Screenshot%20(2583).png)
+
+### Generate Trip – Form
+![Generate Trip Form](screenshots/Screenshot%20(2584).png)
+
+### Generate Trip – World Map
+![Generate Trip Map](screenshots/Screenshot%20(2585).png)
+
+---
+
+## 📸 Screenshots
+
+### Sign In
+![Sign In](screenshots/Screenshot%20(2579).png)
+
+### Home Page
+![Home Page](screenshots/Screenshot%20(2580).png)
+
+### Featured Travel Destinations
+![Featured Destinations](screenshots/Screenshot%20(2581).png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/Screenshot%20(2582).png)
+
+### Manage Users
+![Manage Users](screenshots/Screenshot%20(2583).png)
+
+### Generate Trip – Form
+![Generate Trip Form](screenshots/Screenshot%20(2584).png)
+
+### Generate Trip – World Map
+![Generate Trip Map](screenshots/Screenshot%20(2585).png)
 
 ---
 
@@ -101,7 +153,10 @@ Set permissions on both collections: **Any → Read, Create, Update**
 ### 4. Enable Google OAuth in Appwrite
 - Appwrite → Auth → Settings → Enable Google
 - Add your Google OAuth Client ID and Secret
-- Add authorized redirect URI: `https://cloud.appwrite.io/v1/account/sessions/oauth2/callback/google/YOUR_PROJECT_ID`
+- Add authorized redirect URI:
+```
+https://cloud.appwrite.io/v1/account/sessions/oauth2/callback/google/YOUR_PROJECT_ID
+```
 
 ### 5. Run locally
 ```bash
